@@ -1,10 +1,16 @@
+import Container from "./Container";
 import Counter from "./Counter";
 
 function App() {
+  const counterProps = {
+    a: 1,
+    b: 2,
+    initalValue: 5,
+  };
   return (
-    <>
-      <Counter />
-    </>
+    <Container>
+      <Counter {...counterProps} />
+    </Container>
   );
 }
 
